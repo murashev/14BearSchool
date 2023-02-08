@@ -65,6 +65,10 @@ body {
 .header-row__nav ul {
    display: flex;
 }
+.nav-button {
+   display: none;
+}
+
 .header-row__nav li + li {
    margin-left: 1.7rem;
 }
@@ -111,12 +115,28 @@ body {
    line-height: 0.6;
    margin-left: 38rem;
 }
+
 .home-content__heading h1{
    /* было 36 */
    font-size: 3rem;
    color: #9fa8af;
 }
 .home-content__heading h1 span{
+   /* было 48 */
+   font-size: 4rem;
+   font-weight: 700;
+   color: #39b6df;
+}
+.home-content__heading-mobile {
+   display: none;
+   line-height: 0.6;
+}
+.home-content__heading-mobile h1{
+   /* было 36 */
+   font-size: 3rem;
+   color: #9fa8af;
+}
+.home-content__heading-mobile h1 span{
    /* было 48 */
    font-size: 4rem;
    font-weight: 700;
@@ -177,14 +197,11 @@ body {
    display: flex;
    /* justify-content: space-between; */
 }
-.video-content__clip {
-   max-width: 22.2rem;
-}
 iframe {
-   max-width: 22.2rem;
-   max-height: 12.5rem;
+   width: 22.2rem;
+   height: 12.5rem;
 }
-.video-content__clip + .video-content__clip {
+iframe + iframe {
    margin-left: 5rem;
 }
 .about {
@@ -195,7 +212,7 @@ iframe {
    margin-top: 5.6rem;
 }
 .about-content__img {
-   float:left; /* Выравнивание по левому краю */
+   float: left; /* Выравнивание по левому краю */
    margin: 0 1rem 1rem 0; /* Отступы вокруг картинки */
 }
 .about-content p {
@@ -222,6 +239,7 @@ iframe {
 }
 .team-content {
    text-align: center;
+   min-width: 0;
 }
 .team-content__heading {
    padding: 3.9rem;

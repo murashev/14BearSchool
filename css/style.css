@@ -387,7 +387,7 @@ iframe + iframe {
 .footer-row a:hover {
    color: #004080;
 }
-.footer-row__contacts, .footer-row__courses {
+.footer-row__contacts, .footer-row__links {
    display: flex;
    flex-direction: column;
 }
@@ -422,6 +422,9 @@ iframe + iframe {
    margin: 0 2.2rem;
    overflow: hidden;
    /* border-radius: 25px; */
+ }
+ .courses-mobile {
+   display: none;
  }
 
 

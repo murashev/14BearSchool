@@ -10,6 +10,7 @@
    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
    <link rel="stylesheet" href="./css/style.css">
    <link rel="stylesheet" href="./css/media.css">
+   <link rel="stylesheet" href="./css/modal.css">
    <link rel="shortcut icon" href="./img/favicon/logo.svg" type="image/x-icon">
 </head>
 
@@ -82,7 +83,7 @@
                   </div>
                </div>
             </div>
-            <button class="home-content__btn btn">
+            <button class="home-content__btn btn myModalBtn">
                Записаться
             </button>
          </div>
@@ -201,7 +202,7 @@
             </div>
             <p>Дети должны учиться. Вообще говоря, учиться не мешает и взрослым, но для детей это необходимость. Не
                потому, что образование даст им профессию и гарантированный кусок хлеба</p>
-            <button class="btn course1-btn">
+            <button class="btn course1-btn myModalBtn">
                Записаться
             </button>
             <button id="more" class="btn course1-btn">
@@ -217,7 +218,7 @@
             </div>
             <p>Дети должны учиться. Вообще говоря, учиться не мешает и взрослым, но для детей это необходимость. Не
                потому, что образование даст им профессию и гарантированный кусок хлеба</p>
-            <button class="btn course2-btn">
+            <button class="btn course2-btn myModalBtn">
                Записаться
             </button>
             <button id="more" class="btn course2-btn">
@@ -245,7 +246,7 @@
          <p>Дети должны учиться. Вообще говоря, учиться не мешает и взрослым, но для детей это необходимость. Не потому,
             что образование даст им профессию и гарантированный кусок хлеба</p>
          <div class="mobile-buttons">
-            <button class="btn mobile-btn">
+            <button class="btn mobile-btn myModalBtn">
                Записаться
             </button>
             <button class="btn textbooks-btn mobile-btn">
@@ -330,13 +331,40 @@
          </div>
       </footer>
    </div>
-
+   <div id="myModal" class="modal">
+      <div class="modal-wrapper">
+         <form id="contact" class="modal-content" action="" method="post">
+            <span class="close">&times</span>
+            <h2>Записаться</h2>
+            <h3>Напишите нам, мы свяжемся с Вами в течение 24-х часов</h3>
+            <fieldset>
+               <input placeholder="Ваше имя" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+               <input placeholder="Ваша электронная почта" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+               <input placeholder="Ваш номер телефона" type="tel" tabindex="3">
+            </fieldset>
+            <fieldset>
+               <textarea placeholder="Ваше сообщение" tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+               <button name="submit" class="button" type="submit" id="contact-submit"
+                  data-submit="...Sending">Отправить!</button>
+            </fieldset>
+         </form>
+      </div>
+   </div>
 
    <!-- Swiper JS -->
-   <script src="js/swiper-bundle.min.js"></script>
+   <script src="./js/swiper-bundle.min.js"></script>
 
    <!-- JavaScript -->
-   <script src="js/script.js"></script>
+   <script src="./js/script.js"></script>
+
+   <!-- Modal-->
+   <script src="./js/modal.js"></script>
 </body>
 
 </html>

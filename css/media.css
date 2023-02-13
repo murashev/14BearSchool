@@ -208,7 +208,7 @@
       height: 600px;
    }
   .home-content__heading-mobile {
-   padding-left: 23px;
+   padding: 2rem;
   }
    .home-content {
       display: flex;

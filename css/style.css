@@ -428,14 +428,153 @@ iframe + iframe {
    display: none;
  }
 
+ /* Cтраница курса */
+.course-btn {
+   margin: 0;
+   margin-bottom: 7rem;
+}
+.course-header {
+   padding-top: 11rem;
+}
+.course-content {
+   max-width: 100%;
+   margin: 0 auto;
+}
+.course-content__heading {
+   position: absolute;
+   /* margin-bottom: 8.3rem; */
+   line-height: 0.6;
+   color: #fff;
+   padding: 2rem;
+   /* margin-left: 38rem; */
+}
+.course-content__heading h1{
+   /* было 36 */
+   font-size: 6rem;
+}
+.course-content__heading h1 span{
+   /* было 48 */
+   font-size: 8rem;
+   font-weight: 700;
+}
+.course-about h3,
+.course-program h3,
+.course-teachers h3,
+.course-video h3,
+.course-links h3 {
+   font-size: 3rem;
+   padding-top: 7rem;
+   margin-bottom: 3rem;
+   font-weight: 700;
+   line-height: 1.2;
+}
+.course-about {
+   display: flex;
+   text-align: center;
+}
+.course-about p {
+   font-size: 2rem;
+   line-height: 1.2;
+   text-align: justify;
+   margin-bottom: 3rem;
+}
+.course-details {
+   background-color: #DEE7EE;
+   padding: 5rem;
+   text-align: center;
+}
+.course-details h3{
+   font-size: 3rem;
+   /* padding-top: 2rem; */
+   margin-bottom: 2rem;
+   font-weight: 700;
+   line-height: 1.2;
+}
+.course-details h4 {
+   font-size: 2rem;
+   align-items: center;
+}
+.course-details__slogan {
+   margin-bottom: 2rem;
+}
+.course-details__slogan p{
+   font-size: 2rem;
+}
+.course-details__row {
+   display: flex;
+}
+.course-details__card p {
+   color: #004080;
+   font-size: 3rem;
+   font-weight: 700;
+}
+.course-links  {
+   padding: 2rem;
+   display: flex;
+   text-align: center;
+   margin-bottom: 5rem;
+   
+}
+.course-links__row {
+   display: flex;
+   justify-content: space-between;
+}
+.course-links__card {
+   border: 1px solid #004080;
+   padding: 1rem;
+   margin: 0 1rem;
+   text-align: justify;
+   /* display: block; */
+   float: left;
+   padding: 2rem;
+   width: 50%;
+}
+.course-links__card h4{
+   font-size: 3rem;
+   text-align: center;
+   padding: 1rem;
+   color: #004080;
+}
+.course-links__card p{
+   font-size: 2rem;
+}
 
+.course-video {
+   padding: 2rem;
+   text-align: center;
+   margin-bottom: 5rem;
+}
+.course-video iframe{
+   height: 315px;
+   width: 560px;
+   margin-bottom: 5rem;
+}
 
+.course-program {
+   display: flex;
+   text-align: center;
+   margin-bottom: 5rem;
+   background-color: #9fa8af;
+   padding-bottom: 5rem;
 
-
-
-
-
-
-
-
-
+}
+.course-program__text p{
+   font-size: 2rem;
+   line-height: 1.2;
+   text-align: justify;
+   margin-bottom: 3rem;
+}
+.course-teachers {
+   display: flex;
+   text-align: center;
+}
+.course-teachers h4 {
+   font-size: 3rem;
+   margin-bottom: 5rem;
+}
+.course-teachers__text p{
+   font-size: 2rem;
+   line-height: 1.2;
+   text-align: justify;
+   margin-bottom: 3rem;
+}

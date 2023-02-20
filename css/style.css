@@ -578,3 +578,13 @@ iframe + iframe {
    text-align: justify;
    margin-bottom: 3rem;
 }
+/* anchors */
+#video {
+   padding-top: 11rem;
+}
+#about {
+   padding-top: 11rem;
+}
+#team {
+   padding-top: 11rem;
+}

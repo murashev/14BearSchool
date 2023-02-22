@@ -53,7 +53,7 @@ body {
    margin-bottom: 1rem;
    height: 11rem;
    width: 107rem;
-   z-index: 999;
+   z-index: 200;
 }
 .header-row {
    display: flex;

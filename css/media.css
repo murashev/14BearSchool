@@ -8,6 +8,7 @@
 @media (max-width: 1400px){
    * {
       font-size: 8px;
+
       /* done */
    }
 }
@@ -39,9 +40,9 @@
    .header {
       top: 0;
       width: 100%;
-      height: 15rem;
+      height: 11rem;
       background-color: #fff;
-      z-index: 2;
+      z-index: 3;
    }
    .header-row {
       display: flex;
@@ -60,7 +61,7 @@
       left: 0;
       right: 0;
       background-color: #fff;
-      z-index: 1000;
+      z-index: 3;
       padding: 46px 30px;
       display: flex !important;
       flex-direction: column;
@@ -196,10 +197,14 @@
    .course-right-side__clip {
       margin-bottom: 3.5rem;
    }
+   .course-program {
+      border: none;
+      padding-bottom: 2rem;
+   }
 }
 @media (max-width: 576px){
    * {
-      font-size: 6px;
+      font-size: 7px;
    }
    .container {
       padding: 0;
@@ -270,12 +275,21 @@
    .mobile-btn {
       margin: 2rem;
    }
-   .footer-row {
+   .footer-row,
+   .course-links__row,
+   .course-details__row {
       /* display: block; */
       flex-direction: column;
       /* justify-content: center;    */
       text-align: center;
       /* justify-content: space-around; */
+   }
+   .course-details__card {
+      margin-bottom: 3rem;
+   }
+   .course-video iframe {
+      /* height: 270px; */
+      width: 90%;
    }
    .footer-row__links {
       display: none;
@@ -283,5 +297,51 @@
    .footer-row__contacts {
       margin-bottom: 3.5rem;
    }
+   .course-about,
+   .course-teachers {
+      padding: 2rem;
+   }
+   /* .course-program__wrapper {
+      max-width: 90% ;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+   } */
+   .course-program__item {
+      margin: 2rem;
+      padding: auto;
+   }
+   .course-payment {
+      margin: 2rem;
+   }
+   .course-payment__input {
+      mzx-width: 90%;
+   }
+   .course-links__card {
+      width: 90%;
+      margin-bottom: 3rem;
+   }
+   .course-content__heading h1{
+      /* было 36 */
+      font-size: 4rem;
+   }
+   .course-content__heading h1 span{
+      /* было 48 */
+      font-size: 6rem;
 
 }
+
+@media (max-width: 320px){
+   .course-video iframe {
+      height: 180px;
+      width: 90%
+   }
+   /* .course-books {
+      max-width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   text-align: center;
+   } */
+}   

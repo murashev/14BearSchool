@@ -3,6 +3,8 @@
 * {
 /* в макете 18 */
    font-size: 13px;
+   scroll-behavior: smooth;
+
 }
 
 body {
@@ -10,6 +12,11 @@ body {
    font-weight: 400;
    line-height: 1;
    color: #000000;
+   scroll-behavior: smooth;
+   /* background-color: #00BEE2; */
+   background-color: #000;
+
+
 }
 .none {
    display: none !important;
@@ -28,6 +35,8 @@ body {
 .wrapper {
    max-width: 107rem;
    margin: 0 auto;
+   background-color: #fff;
+
 }
 /* 1940 и 1400 + 2*15*/
 .container {
@@ -46,22 +55,29 @@ body {
    background-color: #004080;
 }
 .header {
+   display: flex;
+   justify-content: space-around;
    position: fixed;
-   background-color: #fff;
+   /* background-color: #fff; */
    padding-top: 1rem;
    padding-bottom: 1rem;
    margin-bottom: 1rem;
    height: 11rem;
    width: 107rem;
-   z-index: 200;
+   z-index: 3;
+   background-color: #00BEE2;
+   color: #fff;
+   align-items: center;
 }
 .header-row {
    display: flex;
-   justify-content: space-between;
+   flex-direction: row;
+   justify-content: space-around;
    align-items: center;
 }
 .header-row__logo {
    max-width: 7rem;
+   /* background-color: #fff; */
 }
 .header-row__nav ul {
    display: flex;
@@ -76,7 +92,9 @@ body {
 .header-row__nav a{
    font-size: 2rem;
    /* font-weight: 700; */
-   color: #39b6df;
+   /* color: #39b6df; */
+   color: #fff;
+
    transition: color 0.2s ease-in;
 }
 .header-row__nav a:hover{
@@ -84,12 +102,15 @@ body {
 }
 .header-row__callback {
    text-align: center;
+   margin-left: 3rem;
 }
 .header-row__callback h2{
    font-size: 3rem;
 }
 .header-row__callback a{
-   color: #39b6df;
+   /* color: #39b6df; */
+   color: #fff;
+
    /* font-weight: 700; */
    font-size: 1.5rem;
    transition: color 0.2s ease-in;
@@ -100,22 +121,28 @@ body {
 }
 .main {
    position:relative;
-   height: 87rem;
+   height: 97rem;
    padding-top: 10.7rem;
-   margin-bottom: 10rem;
+   /* margin-bottom: 10rem; */
 }
 .main-bg-img {
    position: absolute;
    top: 10rem;
-   left: 0.1rem;
+   /* left: 0.1rem; */
    width: 52rem;
    height: 87rem;
 }
 .home-content__heading {
-   margin-bottom: 8.3rem;
+   margin-bottom: 6rem;
+   margin-top: 2.3rem;
    line-height: 0.6;
    margin-left: 38rem;
 }
+.home-content__heading img{
+max-width: 7rem;
+margin-bottom: 2rem;
+}
+
 
 .home-content__heading h1{
    /* было 36 */
@@ -158,7 +185,7 @@ body {
 .home-content__point1 {
    display: flex;
    align-items: center;
-   margin-bottom: 6rem;
+   margin-bottom: 3rem;
    color: #9fa8af;
    line-height: 1.2;
    margin-left: 29.7rem;
@@ -166,7 +193,7 @@ body {
 .home-content__point2 {
    display: flex;
    align-items: center;
-   margin-bottom: 6rem;
+   margin-bottom: 3rem;
    color: #39b6df;
    line-height: 1.2;
    margin-left: 29.7rem;
@@ -206,7 +233,7 @@ iframe + iframe {
    margin-left: 5rem;
 }
 .about {
-   min-height: 58.3rem;
+   /* min-height: 58.3rem; */
    text-align: center;
 }
 .about-content {   
@@ -230,13 +257,17 @@ iframe + iframe {
 }
 .team {
    height: 39rem;
+   margin-bottom: 11rem;
 }
+/* .team-image__wrapper {
+   overflow: hidden;
+} */
 .team-bg-img {
    position: absolute;
-   z-index: -1;
+   z-index: 1;
    height: 39rem;
-   width: 107rem;
-   
+   width: 107rem;   
+   object-fit:cover;
 }
 .team-content {
    text-align: center;
@@ -366,7 +397,7 @@ iframe + iframe {
    background-color: #9fa8af;
 }
 .footer {
-   background-color: #3ec0dd;
+   background-color: #00BEE2;
    padding: 5.6rem;
 }
 .footer-row {
@@ -446,16 +477,21 @@ iframe + iframe {
    line-height: 0.6;
    color: #fff;
    padding: 2rem;
+   
+   background-color: #000;
+   opacity: 0.5;
    /* margin-left: 38rem; */
 }
 .course-content__heading h1{
    /* было 36 */
    font-size: 6rem;
+   line-height: 1;
 }
 .course-content__heading h1 span{
    /* было 48 */
    font-size: 8rem;
    font-weight: 700;
+   line-height: 1;
 }
 .course-about h3,
 .course-program h3,
@@ -487,7 +523,7 @@ iframe + iframe {
    line-height: 1.3;
    text-align: justify;
    margin-bottom: 5rem;
-   margin-top: 7rem;
+   /* margin-top: 7rem; */
 }
 .course-details {
    background-color: #DEE7EE;
@@ -558,7 +594,7 @@ padding: 1rem;
    color: #004080;
 }
 .course-links__card p{
-   font-size: 2rem;
+   font-size: 2.5rem;
 }
 
 .course-video {
@@ -566,9 +602,9 @@ padding: 1rem;
    text-align: center;
 }
 .course-video iframe{
-   height: 315px;
-   width: 560px;
-   margin-bottom: 5rem;
+   height: 48rem;
+   width: 100%;
+   margin-bottom: 10rem;
 }
 
 .course-program {
@@ -636,21 +672,37 @@ padding: 1rem;
    margin-bottom: 5rem;
 }
 .course-teachers__text p{
-   font-size: 2rem;
+   font-size: 2.5rem;
    line-height: 1.2;
    text-align: justify;
    margin-bottom: 3rem;
+   text-indent: 25px;
 }
 /* anchors */
 #video {
    padding-top: 11rem;
+   margin-top:-11rem;
 }
 #about {
    padding-top: 11rem;
+   /* padding-bottom: 11rem; */
 }
 #team {
    padding-top: 11rem;
 }
+#teachers {
+   padding-top: 11rem;
+}
+#program {
+   padding-top: 11rem;
+}
+#payment {
+   padding-top: 11rem;
+}
+#courses {
+   padding-top: 11rem;
+}
+
 /* paypal */
 .course-payment {
    background-color: #9fa8af;
@@ -668,22 +720,68 @@ padding: 1rem;
    font-size: 2rem;
 }
 .course-payment__label {
-   font-size: 2rem;
+   font-size: 2.5rem;
    padding-bottom: 1rem;
 }
 .course-payment__alert {
    font-size: 2rem;
 }
 #smart-button-container {
-   font-size: 2rem;
+   font-size: 2.5rem;
 }
 
 /* books */
+.swiper {
+   max-width:90%;
+
+}
 .course-books__row {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
+   /* text-align: center;
+   margin: 0 auto; */
+   /* flex: 12 3 30em; */
 }
 .course-books__item {
-   width: 50%;
+   /* width: 50%; */
    margin: 3rem;
 }
+.course-books__item img {
+   /* height: 30rem; */
+   /* width: 100%; */
+   /* object-fit:cover; */
+   /* max-width:90%; */
+
+}
+/* grecaptcha-badge */
+.grecaptcha-badge {
+   display: none;
+}
+
+/* слайдер курсы на главной */
+.courses-slider {
+   text-align: left;
+   overflow: hidden;
+   margin-top: 5rem;
+   margin-bottom: 11rem;
+}
+/* .courses-slide {
+   overflow: hidden;
+} */
+.courses-slide img{
+   width: 100%;
+   height: 44rem;
+   object-fit:cover;
+}
+.courses-slider__heading h2{
+   font-size: 3rem;
+   text-align:center;
+   margin-bottom: 5rem;
+}
+.course-payment {
+   position: relative;
+   z-index: 1;
+}
+
+
+
